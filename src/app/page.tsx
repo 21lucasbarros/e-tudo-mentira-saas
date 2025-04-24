@@ -1,4 +1,3 @@
-import FeaturedBooks from "@/components/featured-books";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -10,7 +9,6 @@ export default function Home() {
       <Header />
       <Hero />
       <HowItWorks />
-      <FeaturedBooks />
       <Footer />
     </main>
   );
