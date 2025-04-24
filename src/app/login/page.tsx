@@ -56,11 +56,7 @@ export default function LoginPage() {
           Faça seu login com e-mail e senha.
         </p>
 
-        <Form
-          className="space-y-6"
-          onSubmit={(e) => e.preventDefault()}
-          noValidate
-        >
+        <Form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div className="space-y-2">
             <Label
               htmlFor="email"

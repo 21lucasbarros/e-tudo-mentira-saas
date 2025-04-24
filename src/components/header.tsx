@@ -14,11 +14,13 @@ export default function Header() {
           <img
             src="/logo.png"
             alt="Logo"
-            className="h-10 w-auto"
+            className="h-12 w-auto"
             loading="lazy"
             draggable="false"
           />
-          <h1 className="text-lg sm:text-xl font-bold">É Tudo Mentira™</h1>
+          <h1 className="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+            É Tudo Mentira™
+          </h1>
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-gray-700">
