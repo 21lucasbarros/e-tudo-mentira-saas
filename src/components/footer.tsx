@@ -1,10 +1,4 @@
-import {
-  BookOpen,
-  Instagram,
-  Twitter,
-  Facebook,
-  TwitterIcon,
-} from "lucide-react";
+import { Instagram, Facebook, TwitterIcon } from "lucide-react";
 
 export default function Footer() {
   return (
