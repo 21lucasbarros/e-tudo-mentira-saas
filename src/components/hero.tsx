@@ -9,11 +9,11 @@ export default function Hero() {
 
   const books = [
     {
-      title: "O Primeiro jiu-jiteiro homossexual",
+      title: "O Primeiro Jiu-Jiteiro Homossexual",
       author: "Kallani Fernandes",
     },
     { title: "O Ato Criativo", author: "Rick Rubin" },
-    { title: "A arte do Vapo", author: "Erik Medeiros" },
+    { title: "A Arte do Vapo", author: "Erik Medeiros" },
     { title: "Manifesto Comunista", author: "Friedrich Engels e Karl Marx" },
   ];
 
