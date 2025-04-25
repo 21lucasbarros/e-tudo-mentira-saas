@@ -23,7 +23,12 @@ export default function LoginPage() {
     formState: { errors },
   } = useForm({ resolver: zodResolver(loginUserFormSchema) });
 
-  function loginUser(data: any) {
+  type FormData = {
+    email: string;
+    password: string;
+  };
+
+  function loginUser(data: FormData) {
     console.log(data);
   }
 
