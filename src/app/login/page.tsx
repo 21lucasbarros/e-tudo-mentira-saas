@@ -11,9 +11,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 const loginUserFormSchema = z.object({
   email: z
     .string()
-    .nonempty("E-mail é obrigatório")
+    .nonempty("E-mail é obrigatório.")
     .email("Formato de e-mail inválido"),
-  password: z.string().min(6, "A senha deve ter no mínimo 6 caracteres"),
+  password: z.string().nonempty("Senha é obrigatória."),
 });
 
 export default function LoginPage() {
@@ -62,6 +62,11 @@ export default function LoginPage() {
                   {...register("email")}
                 />
               </div>
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
 
             <div className="space-y-2">
@@ -83,6 +88,11 @@ export default function LoginPage() {
                   {...register("password")}
                 />
               </div>
+              {errors.password && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.password.message}
+                </p>
+              )}
             </div>
             <Button className="w-full cursor-pointer">Enviar</Button>
           </form>
