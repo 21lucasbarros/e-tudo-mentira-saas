@@ -56,8 +56,8 @@ export default function Newsletter() {
                     type="submit"
                     className="flex w-full items-center justify-center rounded-md bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
                   >
-                    <Send className="h-5 w-5 mr-2" />
                     Inscrever-se
+                    <Send className="h-5 w-5 ml-2" />
                   </button>
                 </div>
               </form>

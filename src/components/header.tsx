@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { scrollToElement } from "@/utils/scrollToElement";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,23 +25,31 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6 text-gray-700">
-          <ul className="flex flex-row gap-4 items-center">
-            <li className="hover:text-gray-900 hover:underline">
-              <a href="#">Sobre</a>
+          <ul className="flex flex-row gap-6 items-center">
+            <li className="hover:text-indigo-600 transition-colors duration-200">
+              <a href="#como-funciona" onClick={scrollToElement}>
+                Como Funciona
+              </a>
             </li>
-            <li className="hover:text-gray-900 hover:underline">
-              <a href="#">Depoimentos</a>
+            <li className="hover:text-indigo-600 transition-colors duration-200">
+              <a href="#livros" onClick={scrollToElement}>
+                Livros
+              </a>
             </li>
-            <li className="hover:text-gray-900 hover:underline">
-              <a href="#">Assinar</a>
+            <li className="hover:text-indigo-600 transition-colors duration-200">
+              <a href="#depoimentos" onClick={scrollToElement}>
+                Depoimentos
+              </a>
+            </li>
+            <li className="hover:text-indigo-600 transition-colors duration-200">
+              <a href="#precos" onClick={scrollToElement}>
+                Preços
+              </a>
             </li>
           </ul>
-          <button className="bg-zinc-100 px-4 py-2 rounded-md hover:bg-zinc-200 transition duration-200">
-            <Link
-              href="/login"
-              className="text-gray-700 hover:text-gray-900 hover:underline"
-            >
-              Login
+          <button className="bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition duration-200">
+            <Link href="/login" className="text-white">
+              Começar
             </Link>
           </button>
         </nav>
@@ -56,13 +65,25 @@ export default function Header() {
 
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
-          <a href="#" className="block hover:text-gray-900 hover:underline">
+          <a
+            href="#"
+            onClick={scrollToElement}
+            className="block hover:text-gray-900 hover:underline"
+          >
             Sobre
           </a>
-          <a href="#" className="block hover:text-gray-900 hover:underline">
+          <a
+            href="#"
+            onClick={scrollToElement}
+            className="block hover:text-gray-900 hover:underline"
+          >
             Depoimentos
           </a>
-          <a href="#" className="block hover:text-gray-900 hover:underline">
+          <a
+            href="#"
+            onClick={scrollToElement}
+            className="block hover:text-gray-900 hover:underline"
+          >
             Assinar
           </a>
           <Link
