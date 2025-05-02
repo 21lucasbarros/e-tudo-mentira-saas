@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { scrollToElement } from "@/utils/scrollToElement";
 
 export default function Hero() {
   const [currentBook, setCurrentBook] = useState(0);
@@ -68,6 +69,7 @@ export default function Hero() {
               </Link>
               <a
                 href="#como-funciona"
+                onClick={scrollToElement}
                 className="flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-medium text-indigo-600 shadow-sm border border-indigo-200 hover:bg-indigo-50 transition-all duration-200"
               >
                 Como funciona
