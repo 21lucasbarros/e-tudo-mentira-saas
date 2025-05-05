@@ -13,7 +13,7 @@ export default function Testimonials() {
       id: 2,
       content:
         "Ô trem bão, sô! Achei que era só mais uma lorota, mas o É Tudo Mentira™ é gud demais. As histórias parecem causos que a vó contava — só que com um toque de ficção das boas.",
-      author: "Indelecio Olivo",
+      author: "Indalecio Olivo",
       role: "Pastor digital e mineiro raiz",
       avatar:
         "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800",
