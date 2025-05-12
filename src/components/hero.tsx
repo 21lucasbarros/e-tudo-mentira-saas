@@ -10,13 +10,13 @@ export default function Hero() {
 
   const books = [
     {
-      title: "O Primeiro Jiu-Jiteiro Homossexual",
+      title: "O Primeiro Jiu-Jiteiro Analista de Dados",
       author: "Kallani Fernandes",
     },
     { title: "O Ato Criativo", author: "Rick Rubin" },
     { title: "A Arte do Vapo", author: "Erik Medeiros" },
-    { title: "Manifesto Comunista", author: "Friedrich Engels e Karl Marx" },
-    { title: "Balançando para Endurecer", author: "Eduardo Pan" },
+    { title: "Como Sair de Qualquer Enrascada Legal", author: "Saul Goodman" },
+    { title: "Rôles do Bruxo", author: "Ronaldinho Gaúcho" },
   ];
 
   useEffect(() => {

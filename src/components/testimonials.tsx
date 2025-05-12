@@ -3,9 +3,9 @@ export default function Testimonials() {
     {
       id: 1,
       content:
-        "mano na moral... essis livro e mt brabo viado parece q foi d vdd msm tipo letra do cbjr tlgd ja falei pr geral na acdemia os mlk pira kkkk esquece fi arrocha oss",
-      author: "Kallani Fernandes",
-      role: "Mestre em SQL e Jiu-jiteiro",
+        "Pensei que era zoeira, mas fiquei de cara… cada livro parece real mesmo, até dei um Google pra ver se existia kkkkk. Mostrei pros caras da academia e agora todo mundo quer virar escritor também. Muito brabo!",
+      author: "João Del",
+      role: "SQL Developer e amante de livros",
       avatar:
         "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
