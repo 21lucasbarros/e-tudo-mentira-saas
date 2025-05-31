@@ -1,28 +1,30 @@
+import { Star } from "lucide-react";
+
 export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
       content:
-        "Pensei que era zoeira, mas fiquei de cara… cada livro parece real mesmo, até dei um Google pra ver se existia kkkkk. Mostrei pros caras da academia e agora todo mundo quer virar escritor também. Muito brabo!",
+        "A plataforma superou minhas expectativas. Os livros apresentados são envolventes e a experiência de leitura é extremamente agradável. Recomendo para todos que buscam inovação no universo literário.",
       author: "João Del",
-      role: "SQL Developer e amante de livros",
+      role: "SQL Developer e entusiasta de literatura",
       avatar:
         "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 2,
       content:
-        "Ô trem bão, sô! Achei que era só mais uma lorota, mas o É Tudo Mentira™ é gud demais. As histórias parecem causos que a vó contava — só que com um toque de ficção das boas.",
+        "Fiquei impressionado com a qualidade das obras e a facilidade de navegação. O É Tudo Mentira™ proporciona uma experiência única para quem aprecia boas histórias.",
       author: "Indalecio Olivo",
-      role: "Pastor digital e mineiro raiz",
+      role: "Pastor digital e leitor assíduo",
       avatar:
         "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: 3,
       content:
-        "Se o Santos jogasse com metade da criatividade desses livros, a gente já tava com uns 3 Mundial. Mas não… pelo menos aqui eu leio umas ficção que presta. Melhor que sofrer no Brasileirão COM PORRA DE LEO GODOY.",
-      author: "Brunow Barros",
+        "A curadoria dos livros é excelente e o ambiente é muito acolhedor para novos leitores. Sem dúvida, uma ótima iniciativa para fomentar a leitura e a criatividade.",
+      author: "Pedro Cardoso",
       role: "Especialista em Computação Quântica",
       avatar:
         "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -66,15 +68,10 @@ export default function Testimonials() {
               </p>
               <div className="mt-6 flex text-yellow-400">
                 {[...Array(5)].map((_, i) => (
-                  <svg
+                  <Star
                     key={i}
-                    className="h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
+                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                  />
                 ))}
               </div>
             </div>

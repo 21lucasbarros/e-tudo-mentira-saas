@@ -37,20 +37,17 @@ export default function Hero() {
                 <span className="relative z-10 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                   nunca
                 </span>
-                <svg
-                  className="absolute -bottom-1 left-0 z-0 w-full"
-                  height="12"
-                  viewBox="0 0 358 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 6C31.7568 3.04226 105.411 -1.07451 174.866 6.00003C244.32 13.0746 335.623 11.3953 352 6"
-                    stroke="#d8b4fe"
-                    strokeWidth="10"
-                    strokeLinecap="round"
-                  />
-                </svg>
+                <span
+                  className="absolute -bottom-1 left-0 z-0 w-full h-2 pointer-events-none"
+                  aria-hidden="true"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, #d8b4fe 0%, #c7d2fe 100%)",
+                    borderRadius: "9999px",
+                    opacity: 0.5,
+                    display: "block",
+                  }}
+                ></span>
               </span>{" "}
               existiram
             </h1>
